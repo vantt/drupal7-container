@@ -20,9 +20,3 @@ services:
       - n_a
       - n_a
       - n_a
-
-#  drupal_callback_function_xxx:
-#    parent: drupal_callback_abstract
-#    arguments:
-#      index_0: '@Survey\Progress\App\ConsoleCommand\RespondentClaimGiftCommand'
-#      index_3: '@Survey\Progress\App\ConsoleCommand\RespondentSendMailCommand'
