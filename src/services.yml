@@ -1,0 +1,28 @@
+services:
+
+  drupal_injection_callback:
+    class: D7ServiceContainer\DrupalInjectionCallback
+    public: yes
+    autoconfigure: yes
+    autowire: yes
+
+
+  drupal_callback_abstract:
+    class: D7ServiceContainer\CallbackServiceRepresentation
+    abstract: true
+    arguments:
+      - n_a
+      - n_a
+      - n_a
+      - n_a
+      - n_a
+      - n_a
+      - n_a
+      - n_a
+      - n_a
+
+#  drupal_callback_function_xxx:
+#    parent: drupal_callback_abstract
+#    arguments:
+#      index_0: '@Survey\Progress\App\ConsoleCommand\RespondentClaimGiftCommand'
+#      index_3: '@Survey\Progress\App\ConsoleCommand\RespondentSendMailCommand'

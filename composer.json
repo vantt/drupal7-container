@@ -1,0 +1,38 @@
+{
+    "name": "vantt/drupal7-container",
+    "description": "Integrate Symfony4 Service Container into Drupal7",
+    "homepage": "https://github.com/vantt/drupal7-container",
+    "keywords": ["drupal7", "namespace", "autoload", "dependency injection", "service container"],
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Van Tran"
+        }
+    ],
+
+    "minimum-stability": "dev",
+
+    "require" : {
+        "symfony/http-kernel": "~3.4|~4.1",
+        "symfony/yaml": "~3.4|~4.1",
+        "symfony/event-dispatcher-contracts": "^v1.1.1",
+        "andrewsville/php-token-reflection": "^1.4"
+    },
+
+    "require-dev": {
+
+    },
+
+    "autoload": {
+        "psr-4": {
+            "D7ServiceContainer\\": "src",
+            "D7ServiceContainer\\Tests\\": "tests"
+        }
+    },
+
+    "extra": {
+        "branch-alias": {
+            "dev-master": "v1.2-dev"
+        }
+    }
+}
